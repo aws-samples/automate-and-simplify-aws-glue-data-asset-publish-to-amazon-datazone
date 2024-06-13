@@ -22,13 +22,13 @@ export const dataZoneConfig = (): IDataZoneConfig => {
         DataProducer_ACCOUNT_ID: string;
         DataProducer_CDK_ROLE: string;
     } = {
-        DZ_DOMAIN_NAME: 'testregdatazone',
-        DZ_ACCOUNT_ID: '249219847219', 
-        DZ_REGION: 'eu-west-1',
-        DZ_ASSUMED_ROLE: 'dz-assumable-env-dataset-registration-role',
-        DZ_PROJ_NAME: 'testcrossacctreg',
-        DataProducer_ACCOUNT_ID: '991651053978',
-        DataProducer_CDK_ROLE: 'cdk-hnb659fds-cfn-exec-role-991651053978-eu-west-1',
+        DZ_DOMAIN_NAME: '<<Your_Datazone_Domain_Name>>',
+        DZ_ACCOUNT_ID: '<<Your_Datazone_AWS_Account_Id>>', 
+        DZ_REGION: '<<Your_Datazone_Domain_AWS_Region_name>>',
+        DZ_ASSUMED_ROLE: 'dz-assumable-env-dataset-registration-role>>',
+        DZ_PROJ_NAME: '<<The_Name_Of_The_Project_Within_Your_Datazone_Domain_Where_Data_Would_Be_Registered>>',
+        DataProducer_ACCOUNT_ID: '<<Your_Data_Producer_AWS_Account_Id - where Glue table exists>>',
+        DataProducer_CDK_ROLE: 'cdk-hnb659fds-cfn-exec-role-<<Your_Data_Producer_AWS_Account_Id>>-<<Your_Data_Producer_AWS_Region_name>>',
     };
     return environmentMapper;
   };
