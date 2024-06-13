@@ -1,0 +1,28 @@
+*.js
+!jest.config.js
+
+export_vars.sh
+*.d.ts
+dist
+node_modules
+.vscode
+
+# ignore local NPM configuration file
+.npmrc
+
+.idea/
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+cdk.context.json
+
+**.DS_Store
+
+# use Pipfile with Pipfile.lock instead
+requirements.txt
+
+# Exclude virtual env
+.venv*/
+
+junit-reports
