@@ -108,6 +108,16 @@ with a trust policy like this
 Before deploying this solution, make sure to configure the necessary parameters to your needs. 
 Go to config/DataZoneConfig.ts. There you need to configure and update 
 
+{
+        DZ_DOMAIN_NAME: '<<Your_Datazone_Domain_Name>>',
+        DZ_ACCOUNT_ID: '<<Your_Datazone_AWS_Account_Id>>', 
+        DZ_REGION: '<<Your_Datazone_Domain_AWS_Region_name>>',
+        DZ_ASSUMED_ROLE: 'dz-assumable-env-dataset-registration-role>>',
+        DZ_PROJ_NAME: '<<The_Name_Of_The_Project_Within_Your_Datazone_Domain_Where_Data_Would_Be_Registered>>',
+        DataProducer_ACCOUNT_ID: '<<Your_Data_Producer_AWS_Account_Id - where Glue table exists>>',
+        DataProducer_CDK_ROLE: 'cdk-hnb659fds-cfn-exec-role-<<Your_Data_Producer_AWS_Account_Id>>-<<Your_Data_Producer_AWS_Region_name>>',
+    };
+
 1. The Datazone domain and project name of you DataZone Instance. Make sure all names are in lowercase.
 2. The AWS account id and region
 3. The assumable role mention in step 2 of prerequisites.
