@@ -108,7 +108,7 @@ with a trust policy like this
 Before deploying this solution, make sure to configure the necessary parameters to your needs. 
 Go to config/DataZoneConfig.ts. There you need to configure and update 
 
-{
+    {
         DZ_DOMAIN_NAME: '<<Your_Datazone_Domain_Name>>',
         DZ_ACCOUNT_ID: '<<Your_Datazone_AWS_Account_Id>>', 
         DZ_REGION: '<<Your_Datazone_Domain_AWS_Region_name>>',
