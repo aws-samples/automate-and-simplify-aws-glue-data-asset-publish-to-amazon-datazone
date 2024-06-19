@@ -22,13 +22,13 @@ export const dataZoneConfig = (): IDataZoneConfig => {
         DataProducer_ACCOUNT_ID: string;
         DataProducer_CDK_ROLE: string;
     } = {
-        DZ_DOMAIN_NAME: '<<Your_Datazone_Domain_Name>>',
-        DZ_ACCOUNT_ID: '<<Your_Datazone_AWS_Account_Id>>', 
-        DZ_REGION: '<<Your_Datazone_Domain_AWS_Region_name>>',
-        DZ_ASSUMED_ROLE: 'dz-assumable-env-dataset-registration-role>>',
-        DZ_PROJ_NAME: '<<The_Name_Of_The_Project_Within_Your_Datazone_Domain_Where_Data_Would_Be_Registered>>',
-        DataProducer_ACCOUNT_ID: '<<Your_Data_Producer_AWS_Account_Id - where Glue table exists>>',
-        DataProducer_CDK_ROLE: 'cdk-hnb659fds-cfn-exec-role-<<Your_Data_Producer_AWS_Account_Id>>-<<Your_Data_Producer_AWS_Region_name>>',
+        DZ_DOMAIN_NAME: 'YOUR_DATAZONE_DOMAIN_NAME_PLACEHOLDER',
+        DZ_ACCOUNT_ID: 'YOUR_DATAZONE_AWS_ACCOUNT_ID_PLACEHOLDER', 
+        DZ_REGION: 'YOUR_DATAZONE_DOMAIN_AWS_REGION_PLACEHOLDER',
+        DZ_ASSUMED_ROLE: 'dz-assumable-env-dataset-registration-role',
+        DZ_PROJ_NAME: 'THE_NAME_OF_THE_PROJECT_WITHIN_YOUR_DATAZONE_DOMAIN_WHERE_DATA_WOULD_BE_REGISTERED_PLACEHOLDER',
+        DataProducer_ACCOUNT_ID: 'YOUR_DATA_PRODUCER_AWS_ACCOUNT_ID_WHERE_GLUE_TABLE_EXISTS_PLACEHOLDER',
+        DataProducer_CDK_ROLE: 'cdk-hnb659fds-cfn-exec-role-YOUR_DATA_PRODUCER_AWS_ACCOUNT_ID_PLACEHOLDER-YOUR_DATA_PRODUCER_AWS_REGION_PLACEHOLDER',
     };
     return environmentMapper;
   };
