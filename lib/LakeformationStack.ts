@@ -7,7 +7,7 @@
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { CfnDataLakeSettings, CfnResource } from 'aws-cdk-lib/aws-lakeformation';
 import { Construct } from 'constructs';
-import { DataSource , dataZoneConfig } from '../config/DataZoneCofig';
+import { DataSource , dataZoneConfig } from '../config/DataZoneConfig';
 
 
 interface Props extends StackProps {

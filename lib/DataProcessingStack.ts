@@ -3,7 +3,7 @@ import * as glue from 'aws-cdk-lib/aws-glue';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import { Construct } from 'constructs';
 import { GlueCrawler, GlueCrawlerIamPolicy, GlueCrawlerIamRole, GlueCrawlerLFDbPerms, GlueCrawlerLFTablePerms } from './construct/DataProcessingGlueConstructs';
-import { DataSource } from '../config/DataZoneCofig';
+import { DataSource } from '../config/DataZoneConfig';
 
 export interface DataProcessingStackProps extends cdk.StackProps {
   applicationQualifier: string;

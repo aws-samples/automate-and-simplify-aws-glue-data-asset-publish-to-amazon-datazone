@@ -8,7 +8,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as kms from 'aws-cdk-lib/aws-kms';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import { Construct } from 'constructs';
-import { dataZoneConfig } from '../config/DataZoneCofig';
+import { dataZoneConfig } from '../config/DataZoneConfig';
 
 export interface DataZoneStorageStackProps extends cdk.StackProps {
   applicationQualifier: string;

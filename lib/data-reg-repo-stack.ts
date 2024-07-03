@@ -4,7 +4,7 @@ import { DataZoneStorageStack } from './DataZoneStorageStack';
 import { DatazoneStack } from './DatazoneStack';
 import { LakeformationStack } from './LakeformationStack';
 import { DataProcessingStack } from './DataProcessingStack';
-import { dataZoneConfig } from '../config/DataZoneCofig';
+import { dataZoneConfig } from '../config/DataZoneConfig';
 import { DataKmsStack } from './DataKmsStack';
 
 export class DataRegRepoStack extends cdk.Stack {

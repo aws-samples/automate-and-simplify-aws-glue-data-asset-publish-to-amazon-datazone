@@ -11,7 +11,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import { Bucket } from 'aws-cdk-lib/aws-s3';
 import { Construct } from 'constructs';
-import { IDataZoneConfig, dataZoneConfig } from '../config/DataZoneCofig';
+import { IDataZoneConfig, dataZoneConfig } from '../config/DataZoneConfig';
 
 
 interface Props extends cdk.StackProps {
